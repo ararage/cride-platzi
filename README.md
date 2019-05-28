@@ -39,7 +39,13 @@ $ docker-compose run --rm django python manage.py  migrate
 If you want to delete a Volume you have to down your compose configuration with docker-compose down, after that this should works:
 
 ```
-docker volume rm <volumen>
+$ docker volume rm <volumen>
+```
+
+Django Extensions - Shell Plus usage
+
+```
+$ docker-compose run --rm django python manage.py shell_plus
 ```
 
 ## Common issue for macos users
