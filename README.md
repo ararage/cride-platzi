@@ -48,6 +48,26 @@ Django Extensions - Shell Plus usage
 $ docker-compose run --rm django python manage.py shell_plus
 ```
 
+Individual images
+
+```
+$ docker-compose run --rm --service-ports django
+```
+
+## REST Services
+
+GET Circles
+
+```
+$ http GET localhost:8000/circles/
+```
+
+POST Circles
+
+```
+http POST localhost:8000/circles/create/ name=Manzana slug_name=manzana
+```
+
 ## Common issue for macos users
 
 Sometimes the docker client for macos fails and this might be caused by an issue in Docker Desktop which is storing if it is using the keychain in ~/.docker/config.json with the incorrect key: "credSstore" : "osxkeychain" instead of credsStore.
