@@ -79,6 +79,12 @@ POST Login User
 $ http POST localhost:8000/users/login/ email="email@gmail.com" password="secret" -b
 ```
 
+POST Verify Token
+
+```
+$ http localhost:8000/users/verify/ token="token.token.token"
+```
+
 GET Circles
 
 ```
