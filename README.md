@@ -25,6 +25,7 @@ If the local COMPOSE_FILE constant exists in the terminal session you can run li
 $ docker-compose up
 $ docker-compose down
 $ docker-compose ps
+$ docker-compose build
 ```
 
 Show volumes:
